@@ -37,11 +37,15 @@ function subtrairNum(n1, n2){
 }
 function criaObjeto(){
 
-let name = String(prompt("Digite o seu nome"));
-let age = parseInt(prompt("Digite a sua idade"));
-let time_fav = String(prompt("Digite o seu time favorito"));
+usuario= {}
+    
+var name = (prompt("Digite o seu nome"));
+var age = (prompt("Digite a sua idade"));
+var time_fav = (prompt("Digite o seu time favorito"));
 
-const usuario = [name, age, time_fav]
+usuario.name = name
+usuario.idade = age
+usuario.time_fav = time_fav
 
 console.log(usuario)
 }
@@ -92,18 +96,18 @@ function manipulaArrays(){
     cores.pop()
     console.log("Novo Console.log depois do Pop: ")
     console.log(cores)
-    //cores.sort()
-    //console.log("Novo Console.log em Ordem Alfabética: ")
-    //console.log(cores)
+    cores.sort()
+    console.log("Novo Console.log em Ordem Alfabética: ")
+    console.log(cores)
     cores.splice(1, 1)
     console.log("Novo Console.log com Splice: ")
     console.log(cores)
     let lenght = cores.length;
     console.log(lenght)
     cores.unshift("fucsia")
-    console.log(cores)
+    console.log("Novo console log depois do fucsia: " + cores)
     let primeiraCor = cores.shift()
-    console.log(cores)
+    console.log("Novo console log depois do shift: " + cores)
    
 }
 
